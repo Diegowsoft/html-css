@@ -23,7 +23,11 @@
             padding: 10px;
         }
         
-        table,tr,th {
+        table {
+            box-shadow: 7px 7px 0px black;
+        }
+
+        table,tr,th, td {
             border: 1px solid black;
             border-collapse: collapse;
             background-color: white;
@@ -33,26 +37,84 @@
         }
 
         #th1  {
+            background-color: gray;
+            font-weight: bold;
+            color: white    ;
             border: 1px solid black;
-            padding: 20px 80px 20px 80px;
+            padding: 0px 20px 0px 20px;
             border-collapse: collapse;
         }
 
-        th#th2 {
-            padding: 0px 40px 0px 40px;
-            
+        #th2 {
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 0px 20px 0px 20px;
+            border-collapse: collapse;
+        }
+        #conteudo {
+            text-align: left;
+            padding-left: 5px;
         }
     </style>
 </head>
 <body>
     <header><h1>Desafio 13 - Parte 3</h1></header>
     <table>
-        <th id="th1">Área</th>
-        <th id="th1">Disciplinas</th>
-        <th id="th2">Notas</th>
+        <th id="th1" rowspan="2">Área</th>
+        <th id="th1" rowspan="2">Disciplinas</th>
+        <th id="th2" colspan="2">Notas</th>
+        <th id="th1" rowspan="2">Média</th>
         <tr>
-             
+            <td id="th2">Nota 1</td>
+            <td id="th2">Nota 2</td>
         </tr>
+        <tr>
+             <th rowspan="4">Exatas</th>
+             <td id="conteudo">Matemática</td>
+             <td>0.0</td>
+             <td>0.0</td>
+             <td>0.0</td>
+        </tr>
+        <tr>
+            <td id="conteudo">Física</td>    
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td id="conteudo">Química</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td id="conteudo">Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th id="th1" colspan="4" style="text-align: left; padding-left: 10px;">Média de Exatas</th>
+            <td style="background-color: gray; color: white;">0.0</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Humanas</th>
+            <td id="conteudo">História</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <tr>
+                <td id="conteudo">Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th id="th1" colspan="4" style="text-align: left; padding-left: 10px;">Média de Humanas</th>
+                <td style="background-color: gray; color: white;" >0.0</td>
+            </tr>
     </table>
 </body>
 </html>
