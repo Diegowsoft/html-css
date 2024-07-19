@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magnam alias saepe at, mollitia rerum culpa rem, cumque excepturi id explicabo aspernatur. Aperiam inventore corrupti, eum quod a accusamus. Minus?</p>
+
+    <ul>
+
+        <!--É necessário especificar um name para o iframe ex: name="frame" e você deverá referenciá-lo a sua página usando o target="nome-q-vc-colocou-no-iframe"-->
+
+        <li><a href="pag001.html" target="frame">Primeira página </a></li>
+        <li><a href="pag002.html" target="frame">Segunda página </a></li>
+        <li><a href="pag003.html" target="frame">Terceira página </a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet alias hic inventore, cupiditate quae expedita ex tempora maxime, assumenda excepturi facilis consequatur porro similique quia voluptatibus magnam explicabo consequuntur optio? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur cumque accusantium commodi repellendus unde corporis dignissimos assumenda porro voluptatibus quod incidunt saepe veritatis, laborum asperiores aperiam. Repudiandae, deserunt incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat harum ut quod. Excepturi voluptate voluptates cumque eaque rem fuga, debitis minima mollitia quis placeat nulla perspiciatis incidunt tenetur non illo?</p>
+
+    <iframe id="tela" name="frame"><p>Infelizmente seu navegador navegador não é compatível com isso</p></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolor ipsam veritatis maxime ut? Voluptatem et facere amet ex voluptate earum voluptas repudiandae nesciunt, quasi blanditiis officia eius aliquam velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sint doloribus ipsam temporibus delectus omnis accusantium, quas quasi recusandae commodi eligendi impedit officia? Debitis repellat ullam sed autem est ipsa!</p>
+</body>
+</html>
