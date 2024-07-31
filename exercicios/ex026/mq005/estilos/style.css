@@ -8,34 +8,36 @@
 
 
 body,html {
-    background-color: lightgrey;
+    background-color: #C7D9B7;
 }
 
 header {
-    background-color: rgb(148, 148, 148);
+    background-color: #F39237;
 }
 
 #burguer {
-    background-color: rbg(48,48,48);
+    background-color: #ff810a;
     color: white;
-    display: none;
+    display: block;
     text-align: center;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
-#buguer:hover {
-    background-color: white;
-    color: black;
+#burguer:hover {
+    background-color: #fa9f4a;
+    color: white;
     cursor: pointer;
 }
 
 header > h1 {
     padding: 10px;
+    color: white;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.273);
     text-align: center;
 }
 
 menu {
-    display: block;
+    display: none;
 }
 
 menu > li {
@@ -47,13 +49,14 @@ menu a  {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(87,87,87);
+    background-color: #F39237; 
     color: white;
-    border-top: 2px solid gray;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.415);
 }
 
 menu a:hover {
-    background-color: gray;
+    background-color: #fa9f4a;
+    transition: 0.3s;
 }
 
 main {
@@ -76,9 +79,11 @@ article > p {
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+
